@@ -6,7 +6,7 @@ import Image from "next/image";
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <header className="z-10 w-full bg-bg-blue text-slate-200">
+    <header className="sticky z-10 w-full bg-bg-blue text-slate-200">
       <div className="mx-auto flex justify-between p-5 lg:max-w-7xl">
         {/* hamburger button */}
         <button
