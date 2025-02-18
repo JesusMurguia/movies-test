@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import RadialProgressBar from "./RadialProgressBar";
-import { Cast, type MovieDetails } from "@/app/types/FetchTypes";
+import { Cast, MovieDetails as MovieDetailsType } from "@/app/types/FetchTypes";
 import { formatRuntime } from "@/app/utils";
 
 const MovieDetails = ({
   movie,
   credits,
 }: {
-  movie: MovieDetails;
+  movie: MovieDetailsType;
   credits: Cast[];
 }) => {
   return (
