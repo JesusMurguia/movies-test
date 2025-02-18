@@ -9,9 +9,9 @@ const Accordion = ({ title, pill, open, children }: AccordionType) => {
   return (
     <details
       open={open}
-      className="group flex w-full border-collapse rounded-lg border bg-white text-black shadow-md md:w-60"
+      className="group flex w-full border-collapse flex-col rounded-lg border bg-white text-black shadow-md md:w-60"
     >
-      <summary className="flex cursor-pointer list-none items-center justify-between p-3 font-medium">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 p-3 font-medium">
         <span>{title}</span>
         {!!pill && (
           <span className="ml-auto mr-2 rounded-md border bg-neutral-200 px-1.5 text-sm font-thin">
