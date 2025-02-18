@@ -26,7 +26,7 @@ const MovieDetails = ({
                 src={`https://image.tmdb.org/t/p/w342${movie.poster_path}`}
                 alt="movie poster"
                 width={342}
-                height={500}
+                height={501}
                 className="rounded-md "
               ></Image>
             </div>
