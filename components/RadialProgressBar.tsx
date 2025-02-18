@@ -44,7 +44,7 @@ function RadialProgressBar({
             : ""
         } ${size === "small" ? " text-xs " : "text-3xl"}`}
       >
-        {percentage || "N/A"}
+        {Math.round(percentage) || "N/A"}
       </span>
     </div>
   );

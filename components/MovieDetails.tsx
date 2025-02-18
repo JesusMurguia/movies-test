@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import RadialProgressBar from "./RadialProgressBar";
-import { Cast, MovieDetails } from "@/app/types/FetchTypes";
+import { Cast, type MovieDetails } from "@/app/types/FetchTypes";
 import { formatRuntime } from "@/app/utils";
 
 const MovieDetails = ({
