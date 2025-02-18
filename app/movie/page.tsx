@@ -1,4 +1,4 @@
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 import { MovieFilter, MoviesGrid } from "@/components";
 import React, { Suspense } from "react";
 import { fetchMoviesByType } from "../utils";

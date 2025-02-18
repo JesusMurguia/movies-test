@@ -1,4 +1,4 @@
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 import { fetchMovieCredits, fetchMovieDetails } from "@/app/utils";
 import { CreditsCarousel, ExtraMovieInfo, MovieDetails } from "@/components";
 import { Suspense } from "react";
