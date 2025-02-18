@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React from "react";
 type RadialProgressBarProps = {
   percentage: number;
@@ -38,11 +39,13 @@ function RadialProgressBar({
         />
       </svg>
       <span
-        className={`absolute font-semibold text-white  ${
+        className={classNames(
+          "absolute font-semibold text-white",
+          size === "small" ? " text-xs " : "text-3xl",
           percentage
             ? " mr-0.5 after:absolute after:top-[-3px] after:text-[.45rem] after:content-['%'] "
-            : ""
-        } ${size === "small" ? " text-xs " : "text-3xl"}`}
+            : "",
+        )}
       >
         {Math.round(percentage) || "N/A"}
       </span>
